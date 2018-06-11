@@ -22,7 +22,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[]{cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\documentclass[print]{cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
 %----------------------------------------------------------------------------------------
@@ -37,7 +37,7 @@
 \cvsussex{\href{http://www.sussex.ac.uk/profiles/356453}{Sussex Uni Profile}} % LinkedIn 
 \cvsite{\href{http://fabriziomiano.wordpress.com}{Personal Website}} % Personal website
 \cvmail{\href{mailto:fabriziomiano@gmail.com}{fabriziomiano@gmail.com}} % Email address
-
+\cvgit{\href{https://github.com/fabriziomiano}{github.com/fabriziomiano}}
 %----------------------------------------------------------------------------------------
 %	PROFILE PICTURE
 %----------------------------------------------------------------------------------------
@@ -74,36 +74,38 @@
   %   \Large\icon{\Info}    & \hskip 0.5cm\cvsite\medskip
   %   \Large\icon{\Letter}  & \hskip 0.5cm\href{mailto:\cvmail}{e-Mail}\medskip
   % \end{tabular}
-\cvmail
-\cvnumberphone
-\cvaddress
-~
-\cvsite
-\cvlinkedin
-\cvsussex
-~
-\cvdate
-~
-\section{Languages}
-  % \begin{tabular}{lr}
-    % Italian & Mother tongue
-    % English & Fluent
-    % Spanish & Fluent
-    % French & Basic
-    Italian Mother tongue
-    English Fluent
-    Spanish Fluent
-    French Basic
-  % \end{tabular}
- \section{Tech Skills} 
-  Python, C++, HTML, 
-  Monte Carlo simulations, 
-  Bash, \LaTeX, UNIX, Windows, Office Suite
+    \cvmail
+    \cvnumberphone
+    \cvaddress
+  ~
+  \section{Profiles}
+    \cvsite
+    \cvlinkedin
+    \cvsussex
+    \cvgit
+  % ~
+  %   \cvdate
+  ~
+  \section{Computing} 
+      Python, C++, HTML, 
+      Bash, Monte Carlo simulations, 
+      \LaTeX, Mac OS, UNIX, Windows, Office Suite
+  ~
   \section{Volunteering}
     HiSPARC, 
     \#ScienceOnBuses,
     Brighton Science Festival,
     CERN Masterclass
+  ~
+  \section{Teaching}
+    Associate Tutor of Classical Physics and Electromagnetism; Properties of Matter
+  ~
+  \section{Languages}
+    Italian Mother tongue
+    English Fluent
+    Spanish Fluent
+    French Basic
+  ~
 \end{aside}
 
 
@@ -111,48 +113,59 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Professional Skills}
-The main skills I have developed during my PhD are related to dealing with high-rate and high-volume of data collected with the ATLAS detector at CERN, Geneva. Pattern-recognition and signal extraction algorithms were employed in the analyses I have worked on. Signal-over-background optimisations (Python), modelling of regions of control (C\textit{++}), and monitoring of the ATLAS Inner Detector Trigger were also the heart of such analyses. 
+% \section{Professional Skills}
+% The main skills I have developed during my PhD are related to dealing with high-rate and high-volume of data collected with the ATLAS detector at CERN, Geneva.
+% Signal extraction algorithms were employed in the analyses I have worked on. Signal-over-background optimisations (Python), modelling of regions of control (C\textit{++}), and monitoring of the ATLAS Inner Detector Trigger were also the heart of such analyses. 
 
-\section{Experience}
+% \section{Experience}
 
-\begin{entrylist}
-  \entry
-      {2014--Now}
-      {University of Sussex and CERN}
-      {Brighton, UK / Geneva, Switzerland}
-      {\emph{Doctoral Position}\\
-      Supersymmetry searches at the LHC with the ATLAS detector\\
-      Detailed involvement: 
-      \begin{itemize}
-        \item Developed Python code to perform multi-variable signal-over-background optimisations 
-        \item Modelling of Standard Model backgrounds using C++ code
-        \item Data-Driven estimation of \emph{irreducible} backgrounds and related theory uncertainties evaluation 
-      \end{itemize}\medskip
-      Performance of the ATLAS Inner Detector Trigger\\
-      Detailed involvement: 
-      \begin{itemize}
-        \item Development of real-time pattern recognition and vertex reconstruction 
-        \item Signal-extraction algorithms from millions of events per second produced in particle collisions at the LHC
-        \item Development of a Python class to monitor the size of the ATLAS Event Data Model and display the results on a webpage
-      \end{itemize}      
-      }
-      %------------------------------------------------
+  \subsection{Research at the ATLAS Experiment}
+  \begin{entrylist}
+    \entry
+        {2014--Now}
+        {University of Sussex and CERN}
+        {Brighton, UK / Geneva, Switzerland}
+        {\emph{Doctoral Position} - thesis submission expected early September 2018\\
+        Supersymmetry searches at the LHC with the ATLAS detector\\
+        Detailed involvement: 
+        \begin{itemize}
+          \item Developed Python code to perform multi-variable signal-over-background optimisations to define new kinematic signal regions that enhanced signal contribution while discriminating against SM background processes
+          \item Modelling of Standard Model backgrounds (\ttbar, \Wjets, \Zjets) using custom C++ framework for ROOT n-tuple production to define control regions for the main backgrounds 
+          \item Data-Driven estimation of the \emph{irreducible} \ttZ\ background and evaluation of related theory uncertainties
+        \end{itemize}\medskip
+        Performance of the ATLAS Inner Detector Trigger\\
+        Detailed involvement: 
+        \begin{itemize}
+          \item Participation in the development of vertex reconstruction algorithm (C++) within the \emph{TrigInDetAnalysis} framework
+          \item Validation of the changes to the \emph{TrigInDetAnalysis} framework before release
+          \item Monitoring of the performance of electron, muon, and $b$-jet tracking and reconstruction efficiencies.
+        \end{itemize}\medskip
+        Development of the Trigger EDM Size Monitoring Python tool\\
+        Detailed involvement: 
+        \begin{itemize}
+          \item Development of a Python class to monitor the size of the ATLAS Event Data Model for Run 2, and of HTML code to display the results on a web page
+        \end{itemize}      
+        }
+        %------------------------------------------------
+  \end{entrylist}
 
-  \entry
-      {2013--2014}
-      {Università degli Studi di Catania}
-      {Catania, Italy}
-      {\emph{MSc INFN-funded project}\\
-      Monte Carlo simulations of protons emission and space-time characterisation in heavy-ion collisions
-      \begin{itemize}
-        \item Developed C++ code to simulate physical distributions of the emission of protons from a nuclear source of a given size and life-time
-        \item Validation of the simulations were performed by means of data/MC plots 
-        \item Deduction of the geometrical size and life-time of a nuclear source created in a heavy-ion collision at intermediate energy using data collected with the LASSA detector of the NSCL, Michigan, US.
-      \end{itemize}
-      }
+  \subsection{Research at the INFN-LNS}
 
-\end{entrylist}
+  \begin{entrylist}
+    \entry
+        {2013--2014}
+        {Università degli Studi di Catania}
+        {Catania, Italy}
+        {\emph{MSc INFN-funded project}\\
+        Monte Carlo simulations of protons emission and space-time characterisation in heavy-ion collisions
+        \begin{itemize}
+          \item Developed C++ code to simulate physical distributions of the emission of protons from a nuclear source of a given size and life-time
+          \item Validation of the simulations were performed by means of data/MC plots 
+          \item Deduction of the geometrical size and life-time of a nuclear source created in a heavy-ion collision at intermediate energy using data collected with the LASSA detector of the NSCL, Michigan, US.
+        \end{itemize}
+        }
+
+  \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -160,7 +173,6 @@ The main skills I have developed during my PhD are related to dealing with high-
 \section{Education}
 
 \begin{entrylist}
-
   \entry
       {Current}
       {PhD {\normalfont in Experimental Particle Physics}}
@@ -186,12 +198,25 @@ The main skills I have developed during my PhD are related to dealing with high-
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+ \clearpage
+ \section{Publications}
+ \printbibsection{article}{Articles in peer-reviewed journals} % Print all articles from the bibliography
+ \begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+ \nocite{*}
+     \printbibliography[type=inproceedings, title={International peer-reviewed conferences/proceedings}, heading=bibheading]
+\end{refsection}
+
+%\printbibsection{report}{Research reports} % Print all research reports from the bibliography
+
+
+%----------------------------------------------------------------------------------------
 % COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
-\section{Communication Skills}
+\section{Communication}
 
 \begin{entrylist}
-
   \entry
     {2017}
     {15' Conference Talk}
@@ -221,7 +246,7 @@ The main skills I have developed during my PhD are related to dealing with high-
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
-%	AWARDS SECTION
+% AWARDS SECTION
 %----------------------------------------------------------------------------------------
 \section{Awards}
 
@@ -248,18 +273,7 @@ The main skills I have developed during my PhD are related to dealing with high-
       %------------------------------------------------
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%----------------------------------------------------------------------------------------
- \section{Publications}
- \printbibsection{article}{Articles in peer-reviewed journals} % Print all articles from the bibliography
- \begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
- \nocite{*}
-     \printbibliography[type=inproceedings, title={International peer-reviewed conferences/proceedings}, heading=bibheading]
-\end{refsection}
 
-%\printbibsection{report}{Research reports} % Print all research reports from the bibliography
 
-%----------------------------------------------------------------------------------------
 \raggedbottom
 \end{document}

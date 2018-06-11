@@ -1,0 +1,10 @@
+compile_pdf:
+  image: aergus/latex
+  script:
+    - xelatex cv.tex
+    - biber cv.bcf
+    - xelatex cv.tex
+    - xelatex cv.tex
+  artifacts:
+    paths:
+      - cv.pdf
