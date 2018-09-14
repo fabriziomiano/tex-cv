@@ -8,3 +8,7 @@
 *.out
 *.xml
 *.synctex.gz
+CV_EN_ac.*
+CV_IT_Az.*
+Output/
+figures/
