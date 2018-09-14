@@ -1,0 +1,6 @@
+#Usage
+
+xelatex CV_EN_co.tex
+xelatex CV_EN_co.tex
+biber CV_EN
+xelatex CV_EN_co.tex
