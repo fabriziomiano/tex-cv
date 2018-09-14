@@ -14,10 +14,12 @@ xelatex CV_EN_co.tex
 xelatex CV_EN_co.tex
 ```
 
-Then run biber and XeLaTeX again
+Then run biber to compile the bibliography
 ```
 biber CV_EN.bcf
 ```
+
+and then latex again to typeset the bibliography
 ```
 xelatex CV_EN_co.tex
 ```
