@@ -29,14 +29,16 @@
 %	CV INFO
 %----------------------------------------------------------------------------------------
 \cvname{Fabrizio Miano} % Your name
-\cvjobtitle{Ph.D. candidate / Junior Data Scientist} % Job title/career
+\cvjobtitle{Research Fellow in Data Science} % Job title/career
 \cvdate{26 January 1987} % Date of birth
 \cvaddress{Brighton, UK} % Short address/location, use \newline if more than 1 line is required
 \cvnumberphone{+447478953812} % Phone number
-\cvlinkedin{\href{http://linkedin.com/in/fabriziomiano}{LinkedIn Profile}} % LinkedIn 
-\cvsussex{\href{http://www.sussex.ac.uk/profiles/356453}{Sussex Uni Profile}} % LinkedIn 
-\cvsite{\href{http://fabriziomiano.wordpress.com}{Personal Website}} % Personal website
-\cvmail{\href{mailto:fabriziomiano@gmail.com}{fabriziomiano@gmail.com}} % Email address
+% \cvlinkedin{\href{http://linkedin.com/in/fabriziomiano}{linkedin.com/in/fabriziomiano}} 
+\cvlinkedin{\href{http://linkedin.com/in/fabriziomiano}{LinkedIn}} 
+% \cvsussex{\href{http://www.sussex.ac.uk/profiles/356453}{sussex.ac.uk/profiles/356453}} 
+\cvsussex{\href{http://www.sussex.ac.uk/profiles/356453}{University Profile}}  
+\cvsite{\href{http://fabriziomiano.wordpress.com}{fabriziomiano.wordpress.com}} 
+\cvmail{\href{mailto:fabriziomiano@gmail.com}{fabriziomiano@gmail.com}} 
 \cvgit{\href{https://gitlab.com/fabriziomiano}{gitlab.com/fabriziomiano}}
 %----------------------------------------------------------------------------------------
 %	PROFILE PICTURE
@@ -79,23 +81,24 @@
     \cvaddress
   ~
   \section{Profiles}
-    \cvsite
     \cvlinkedin
     \cvsussex
     \cvgit
+    \cvsite
   % ~
   %   \cvdate
   ~
   \section{Computing} 
       Python, C++, HTML, 
       Bash, Monte Carlo simulations, 
-      \LaTeX, Mac OS, UNIX, Windows, Office Suite
+      MS Word, Excel, PowerPoint,
+      \LaTeX, Mac OS, UNIX, Windows
   ~
   \section{Volunteering}
     HiSPARC, 
     \#ScienceOnBuses,
     Brighton Science Festival,
-    CERN Masterclass
+    CERN Master class
   ~
   \section{Teaching}
     Associate Tutor of Classical Physics and Electromagnetism; Properties of Matter
@@ -113,10 +116,9 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Professional Skills}
+\section{Overview}
 
-By the end of my PhD I won a 3-month grant to work on an AI project: the development of an algorithm capable of performing image recognition within a given dataset. I have spent 4 months working for \href{http://www.deckchair.com}{Deckchair.com} developing such an algorithm. In particular, two of the approaches that have been developed are; a statistical tool that exploits the structural similarity index (OpenCV, skimage) to select only interesting images; a machine learning tool (sklearn,
-keras, Tensorflow), in particular a support vector machine, for image classification. \\During my PhD the main skills I have developed are related to dealing with high-rates and high-volumes of data collected with the ATLAS detector at CERN, Geneva. Signal extraction algorithms, signal-over-background optimisations (Python) modelling of regions of control (C\textit{++}) were at the heart of the analyses I have carried out. Additionally I have been involved in the development of monitoring tools for the ATLAS Inner Detector Trigger using databases.
+By the end of my PhD I won a grant to work on an AI project: the development of an algorithm capable of selecting interesting images within a given dataset. I have spent 4 months working for \href{http://www.deckchair.com}{Deckchair.com} developing such an algorithm. In particular, two of the approaches that have been developed are; a statistical tool that exploits the structural similarity index (OpenCV, skimage); a machine learning tool (Scikit-Learn, keras, Tensorflow) for image classification. The project was timely delivered. As a Research Fellow in Data Science, I have moved to a new project: action recognition i.e. the classification of an action that is present in a given video. \\During my PhD the main skills I have developed are related to dealing with high-rates and high-volumes of particle-particle collisions data collected with the ATLAS detector at CERN, Geneva. Signal extraction algorithms, signal-over-background optimisations (Python) modelling of regions of control (C\textit{++}), and estimation of uncertainties (MS Excel) were at the heart of the analyses I have carried out. Ultimately, I have developed a monitoring tool (Python) for the ATLAS Inner Detector Trigger that employs the creation and the management of a database.
 
  \section{Research Experience}
   \begin{entrylist}
@@ -124,11 +126,31 @@ keras, Tensorflow), in particular a support vector machine, for image classifica
     {2018--Now}
     {University of Sussex}
     {Brighton, UK}
-    {\emph{Junior Data Scientist - Placement in collaboration with Deckchair.com} \\%- thesis submission expected early September 2018\\
-    Development of a computer vision algorithm. Detailed involvement:
+    {\emph{Research Fellow in Data Science}
     \begin{itemize}
-      \item Development of a statistical tool to detect interesting images within a dataset using Structural Similarity Index analysis (opencv, sklearn);
-      \item Feature extraction via k-Means clustering (sklearn) to perform image classification using SVM and Tensorflow (keras, Inception V3);
+      \item Development of an AI tool capable of performing action recognition (neural networks: CNN, DNN)
+      \item Seek companies to work with on specific challenges
+      \item Exploration of potential collaboration with other areas of research: 
+      \begin{itemize}
+        \item Evolutionary and Adaptive Systems Research Group
+        \item Data Science Research Group
+        \item Industrial Informatics and Signal Processing Research Group
+        \item Sensor Technology Research Centre
+      \end{itemize}
+    \end{itemize}
+    }
+  \end{entrylist}
+
+  \begin{entrylist}
+    \entry
+    {2018}
+    {University of Sussex}
+    {Brighton, UK}
+    {\emph{Junior Data Scientist - Placement in collaboration with Deckchair.com}
+    \\Detailed involvement:
+    \begin{itemize}
+      \item Development of a statistical tool to detect interesting images within a dataset using Structural Similarity Index analysis (OpenCV, Scikit-Learn);
+      \item Design of a machine learning tool to perform feature extraction via k-Means clustering (Scikit-Learn) and image classification using SVM, Keras, and Tensorflow (Inception V3);
     \end{itemize}
     }
   \end{entrylist}
@@ -136,27 +158,25 @@ keras, Tensorflow), in particular a support vector machine, for image classifica
   \begin{entrylist}
     \entry
     {2014--2018}
-    {University of Sussex and CERN}
+    {University of Sussex - CERN}
     {Brighton, UK / Geneva, Switzerland}
-    {\emph{Doctoral Position} \\%- thesis submission expected early September 2018\\
-    Supersymmetry searches at the LHC with the ATLAS detector\\
-    Detailed involvement: 
+    {\emph{Doctoral Position}
     \begin{itemize}
-      \item Developed Python code to perform multi-variable signal-over-background optimisations to define new kinematic signal regions that enhanced signal contribution while discriminating against SM background processes
-      \item Modelling of Standard Model backgrounds using custom C++ framework for \texttt{ROOT} n-tuple production to define control regions for the main backgrounds 
-      \item Data-Driven estimation of the \emph{irreducible} background and evaluation of related theory uncertainties
-    \end{itemize}\medskip
-    Performance of the ATLAS Inner Detector Trigger\\
-    Detailed involvement: 
+      \item Developed Python code to perform multi-variable signal-over-background optimisations to define signal-enriched regions to enhance signal contribution while discriminating against background
+      \item Modelling of main backgrounds using custom C++ framework
+      \item Data-Driven estimation of an \emph{irreducible} background and evaluation of related theory uncertainties (C++, Python, Excel)
+    \end{itemize}%\medskip
+    % Performance of the ATLAS Inner Detector Trigger\\
+    % Detailed involvement: 
     \begin{itemize}
-      \item Participation in the development of vertex reconstruction algorithm (C++)
+      \item Participation in the development and commissioning of vertex reconstruction algorithm (C++)
       \item Validation of the changes to the used framework before release
-      \item Monitoring of the performance of the tracking and reconstruction efficiencies
-    \end{itemize}\medskip
-    Development of the Trigger EDM Size Monitoring Python tool\\
-    Detailed involvement: 
+      \item Monitoring of the performance of the tracking efficiencies
+    \end{itemize}%\medskip
+    % Development of the Trigger EDM Size Monitoring Python tool\\
+    % Detailed involvement: 
     \begin{itemize}
-      \item Development of a monitoring tool (Python) and HTML code to display the results of the monitoring (plots, tables) on a web page
+      \item Development of a monitoring tool (Python) to display the results of the monitoring (plots, tables) on a web page (HTML)
     \end{itemize}      
     }
   \end{entrylist}
@@ -183,11 +203,11 @@ keras, Tensorflow), in particular a support vector machine, for image classifica
 
 \begin{entrylist}
   \entry
-      {Current}
+      {2015--2018}
       {PhD {\normalfont in Experimental Particle Physics}}
       {University of Sussex, UK / CERN, Switzerland}
-      {\emph{Search for supersymmetry at LHC with ATLAS detector\\
-      The performance of the Inner Detector Trigger of the ATLAS detector}
+      {\emph{Optimisation studies and data-driven background estimation in searches for the 
+      supersymmetric partner of the top quark with the ATLAS Detector at the LHC}
       }
       %------------------------------------------------
 
@@ -238,47 +258,60 @@ keras, Tensorflow), in particular a support vector machine, for image classifica
     {2014}
     {20' Graduation Talk}
     {Università degli Studi di Catania, Italy}
-    {\emph{Protons emission and space-time characterisation in heavy-ion collisions}}
+    {\emph{Emission of protons and space-time characterisation in heavy-ion collisions}}
     %------------------------------------------------
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 % SCHOOLS
 %----------------------------------------------------------------------------------------
-\section{Workshops and Schools}
+% \section{Workshops and Schools}
 
-\begin{entrylist}
-  \entry
-    {2017}
-    {CERN European School of High-Energy Physics}
-    {Evora, Portugal}
-    {\emph{The European School is targeted particularly at students in experimental High-Energy Physics who are in the final years of work towards their PhDs}}
-    %------------------------------------------------
-  \entry
-    {2016}
-    {International ATLAS SUSY Workshop}
-    {Brighton, UK}
-    {\emph{One-week long workshop about the definition of the strategies for the Supersymmetry searches at ATLAS}}
-    %------------------------------------------------
-  \entry
-    {2015}
-    {STFC High-Energy Physics Summer School}
-    {Lancaster, UK}
-    {\emph{A two-week long school on theoretical and phenomenological High-Energy Physics}}
-    %------------------------------------------------
-  \entry
-    {2013}
-    {WPCF 2013 - IX Workshop on Particle Correlations and Femtoscopy}
-    {Catania, Italy}
-    {\emph{A three-day long workshop on particle-particle correlations and “femtoscopy” in Nuclear and Particle Physics}}
-\end{entrylist}
+% \begin{entrylist}
+%   \entry
+%     {2017}
+%     {CERN European School of High-Energy Physics}
+%     {Evora, Portugal}
+%     {\emph{The European School is targeted particularly at students in experimental High-Energy Physics who are in the final years of work towards their PhDs}}
+%     %------------------------------------------------
+%   \entry
+%     {2016}
+%     {International ATLAS SUSY Workshop}
+%     {Brighton, UK}
+%     {\emph{One-week long workshop about the definition of the strategies for the Supersymmetry searches at ATLAS}}
+%     %------------------------------------------------
+%   \entry
+%     {2015}
+%     {STFC High-Energy Physics Summer School}
+%     {Lancaster, UK}
+%     {\emph{A two-week long school on theoretical and phenomenological High-Energy Physics}}
+%     %------------------------------------------------
+%   \entry
+%     {2013}
+%     {WPCF 2013 - IX Workshop on Particle Correlations and Femtoscopy}
+%     {Catania, Italy}
+%     {\emph{A three-day long workshop on particle-particle correlations and “femtoscopy” in Nuclear and Particle Physics}}
+% \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 % AWARDS SECTION
 %----------------------------------------------------------------------------------------
-\clearpage\section{Awards}
+\section{Awards}
 
 \begin{entrylist}
+  \entry 
+      {2018}
+      {Fellowship}
+      {University of Sussex, UK}
+      {STFC Impact Acceleration Account}
+      %------------------------------------------------
+  \entry 
+      {2018}
+      {Grant}
+      {University of Sussex in collaboration with Deckchair.com}
+      {DISCnet}
+      %------------------------------------------------
+
   \entry
       {2016}
       {Grant}
@@ -290,22 +323,21 @@ keras, Tensorflow), in particular a support vector machine, for image classifica
       {2015}
       {Scholarship}
       {STFC, UK}
-      {4-years STFC-funded PhD scholarship in collaboration with CERN}
+      {4-year STFC-funded PhD scholarship in collaboration with CERN}
       %------------------------------------------------
 
   \entry
       {2013}
       {Scholarship}
       {INFN-LNS, Italy}
-      {1 year INFN-funded scholarship in collaboration with LNS}
+      {1-year INFN-funded scholarship in collaboration with LNS}
       %------------------------------------------------
 \end{entrylist}
 
-% %----------------------------------------------------------------------------------------
-% % PUBLICATIONS SECTION
-% %----------------------------------------------------------------------------------------
- % \clearpage
- % \section{Publications}
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+ \clearpage\section{Publications}
  \printbibsection{article}{Articles in peer-reviewed journals} % Print all articles from the bibliography
  \begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
  \nocite{*}
