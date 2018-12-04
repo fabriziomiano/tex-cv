@@ -11,7 +11,6 @@ You must have latex installed. In fact, you'll see that you need XeLaTeX. There 
 First, run XeLaTeX
 ```
 xelatex CV_EN_co.tex
-xelatex CV_EN_co.tex
 ```
 
 Then run biber to compile the bibliography
