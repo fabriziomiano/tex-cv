@@ -126,7 +126,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2cm} % space between header and first section
+  \vspace{3.5cm} % space between header and first section
   %\vspace{\parskip}
 }
 
@@ -144,7 +144,7 @@
         green\or%
         orange\or%
         brown\or%
-%        blue\or%
+       blue\or%
 %        purple\or%
         headercolor\fi%
     } #1#2#3%
