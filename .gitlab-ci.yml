@@ -1,0 +1,7 @@
+compile_pdf:
+  image: aergus/latex
+  script:
+    - lualatex cv.tex
+  artifacts:
+    paths:
+      - cv.pdf
