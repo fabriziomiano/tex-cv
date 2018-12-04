@@ -4,7 +4,7 @@ A CV in TeX takem from https://www.latextemplates.com/template/awesome-resume-cv
 
 ## Getting Started
 
-You must have latex installed. In fact, you'll see that you need LuaLaTeC. There are loads of tutorials on where and how you can get LaTeX for your machine (Linux, macOS, Windows). 
+You must have latex installed. In fact, you'll see that you need LuaLaTeX. There are loads of tutorials on where and how you can get LaTeX for your machine (Linux, macOS, Windows). 
 
 ## Running the test
 
