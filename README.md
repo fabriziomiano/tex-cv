@@ -8,7 +8,7 @@ You must have latex installed. In fact, you'll see that you need XeLaTeX. There 
 
 ## Running the test
 
-First, run XeLaTeX twice
+First, run XeLaTeX
 ```
 xelatex CV_EN_co.tex
 xelatex CV_EN_co.tex
@@ -19,8 +19,9 @@ Then run biber to compile the bibliography
 biber CV_EN.bcf
 ```
 
-and then latex again to typeset the bibliography
+and then run
 ```
+xelatex CV_EN_co.tex
 xelatex CV_EN_co.tex
 ```
 
