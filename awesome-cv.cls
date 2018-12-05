@@ -163,22 +163,22 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
-\newfontfamily\FA[Path=\@fontdir]{FontAwesome}
+\newfontfamily\FA[Path=\@fontdir]{FontAwesome.ttf}
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  ItalicFont=*-Italic,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-BoldItalic,
+  UprightFont=*-Regular.ttf,
+  ItalicFont=*-Italic.ttf,
+  BoldFont=*-Bold.ttf,
+  BoldItalicFont=*-BoldItalic.ttf,
 ]{Roboto}
 
 \newfontfamily\headerfontlight[
   Path=\@fontdir,
-  UprightFont=*-Thin,
-  ItalicFont=*-ThinItalic,
-  BoldFont=*-Medium,
-  BoldItalicFont=*-MediumItalic,
+  UprightFont=*-Thin.ttf,
+  ItalicFont=*-ThinItalic.ttf,
+  BoldFont=*-Medium.ttf,
+  BoldItalicFont=*-MediumItalic.ttf,
 ]{Roboto}
 
 \newcommand*{\footerfont}{\sourcesanspro}
@@ -196,6 +196,7 @@
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
+\newcommand*{\headerquotetextstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
@@ -327,7 +328,10 @@
 
 % Defines writer's quote (optional)
 % Usage: \quote{<quote>}
-\renewcommand*{\quote}[1]{\def\@quote{#1}}
+% \renewcommand*{\quote}[1]{\def\@quote{#1}}
+\renewcommand*{\quote}[2]{\def\@quotebody{#1}\def\@quoteauthor{#2}}
+%\newcommand*{\stackoverflow}[2]{\def\@stackoverflowid{#1}\def\@stackoverflowname{#2}}
+
 
 % Defines recipient's information (cover letter only)
 % Usage: \recipient{<recipient name>}{<recipient address>}
@@ -511,9 +515,11 @@
           \@extrainfo%
         }%
     } \\[\acvHeaderAfterSocialSkip]%
+    % \ifthenelse{\isundefined{\@quotebody\@quoteauthor}}%
     \ifthenelse{\isundefined{\@quote}}%
       {}%
-      {\headerquotestyle{\@quote\\}\vspace{\acvHeaderAfterQuoteSkip}}%
+      {\headerquotestyle{\@quote}\\\vspace{\acvHeaderAfterQuoteSkip}}%
+      % {\headerquotestyle{\@quotebody}\,\headerquotetextstyle{\@quoteauthor}\\\vspace{\acvHeaderAfterQuoteSkip}}%
   \end{minipage}%
   \begin{minipage}[c]{\headerphotowidth}%
     \ifthenelse{\equal{\@photoalign}{right}}{\raggedleft\drawphoto}{}
