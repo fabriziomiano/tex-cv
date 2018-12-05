@@ -1,5 +1,5 @@
 compile_pdf:
-  image: aergus/latex
+  image: harshjv/texlive-2015
   script:
     - lualatex cv.tex
   artifacts:
