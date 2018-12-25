@@ -7,10 +7,8 @@
 *.log
 *.out
 *.xml
+*.pdf
 *.synctex.gz
-CV_EN_ac.*
-CV_IT_Az.*
-CV_IT_ac.*
 .DS*
 Output/
 figures/
