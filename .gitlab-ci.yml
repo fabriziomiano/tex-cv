@@ -1,10 +1,10 @@
 compile_pdf:
   image: harshjv/texlive-2015
   script:
-    - lualatex cv.tex
-    - biber cv
-    - lualatex cv.tex
-    - lualatex cv.tex    
+    - lualatex cv-en.tex
+    - biber cv-en
+    - lualatex cv-en.tex
+    - lualatex cv-en.tex    
   artifacts:
     paths:
-      - cv.pdf
+      - cv-en.pdf
