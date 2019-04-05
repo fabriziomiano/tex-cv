@@ -1,4 +1,4 @@
-%!TEX TS-program = xelatex
+%!TEX program = lualatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
 %
@@ -83,7 +83,9 @@
   {}
   {}
 
-
+\makeatletter
+\renewcommand\@biblabel[1]{}
+\makeatother
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
@@ -98,10 +100,13 @@
 
 \newpage
 \cvsection{Pubblicazioni}
+\newrefcontext[sorting=ynt]
+\printbibliography[type={#1}, title={#2}]%, heading=bibheading]
+
+ \printbibsection{inproceedings}{Proceedings/conferenze internazionali peer-reviewed} % Print all articles from the bibliography
+\newrefcontext[sorting=nty]
+ \printbibsection{thesis}{Tesi di Dottorato}%, heading=bibheading]
+\newrefcontext[sorting=nty]
  \printbibsection{article}{Articoli in giornali peer-reviewed} % Print all articles from the bibliography
- \begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
- \nocite{*}
-     \printbibliography[type=inproceedings, title={Proceedings/conferenze internazionali peer-reviewed}]%, heading=bibheading]
-\end{refsection}
 %-------------------------------------------------------------------------------
 \end{document}

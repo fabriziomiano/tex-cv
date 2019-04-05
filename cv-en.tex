@@ -99,10 +99,10 @@
 
 \newpage
 \cvsection{Publications}
+\newrefcontext[sorting=ynt]
+ \printbibsection{inproceedings}{International peer-reviewed conferences/proceedings}%, heading=bibheading]
+\newrefcontext[sorting=nty]
+\printbibsection{thesis}{PhD Thesis}%, heading=bibheading]
+\newrefcontext[sorting=nty]
  \printbibsection{article}{Articles in peer-reviewed journals} % Print all articles from the bibliography
- \begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
- \nocite{*}
-     \printbibliography[type=inproceedings, title={International peer-reviewed conferences/proceedings}]%, heading=bibheading]
-\end{refsection}
-%-------------------------------------------------------------------------------
-\end{document}
+ \end{document}
