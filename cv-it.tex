@@ -90,19 +90,17 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{it/sections/overview}
-\input{it/sections/experience}
-\newpage\input{en/sections/education}
-\input{it/sections/skills}
-\input{it/sections/presentation}
-\input{it/sections/honors}
-\input{it/sections/extracurricular}
+\input{sections/it/overview}
+\input{sections/it/experience}
+\newpage\input{sections/it/education}
+\input{sections/it/skills}
+\input{sections/it/presentation}
+\input{sections/it/honors}
+\input{sections/it/extracurricular}
 
 \newpage
 \cvsection{Pubblicazioni}
 \newrefcontext[sorting=ynt]
-\printbibliography[type={#1}, title={#2}]%, heading=bibheading]
-
  \printbibsection{inproceedings}{Proceedings/conferenze internazionali peer-reviewed} % Print all articles from the bibliography
 \newrefcontext[sorting=nty]
  \printbibsection{thesis}{Tesi di Dottorato}%, heading=bibheading]
