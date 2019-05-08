@@ -8,11 +8,11 @@ All I did is to add a publication section which wasn't there when I got this nic
 
 ## Getting started
 
-You must have latex installed and in particular you need LuaLaTeX. There are loads of tutorials on where and how you can get LaTeX for your OS, e.g.
+You must have latex installed and in particular you need LuaLaTeX. There are loads of tutorials on where and how you can get LaTeX for your OS.
+I have written a script that, if you're on Ubuntu, will install everything that's needed to compile it. Just type in a command line (within the repo dir)
 
-on Ubuntu 16.04
 ```
-sudo apt-get install texlive-full
+source install-dependencies.sh
 ```
 will do. If you're on macOS:
 * go to http://www.tug.org/mactex/ or simply google "mactex" if this link no longer works
