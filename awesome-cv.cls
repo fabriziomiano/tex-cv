@@ -163,7 +163,9 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
-\newfontfamily\FA[Path=\@fontdir]{FontAwesome.ttf}
+% \newfontfamily\FA[Path=\@fontdir]{FontAwesome.ttf}
+% Changed as suggested in https://github.com/OJFord/Awesome-CV/commit/a4c42f40b46d02726e4742a8fe3ecd7db90b03bd
+\setfontfamily\FA[Path=\@fontdir]{FontAwesome.ttf}
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
   Path=\@fontdir,
