@@ -163,9 +163,9 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
-\setfontfamily\FA[Path=\@fontdir]{FontAwesome.ttf}
+\newfontfamily\FA[Path=\@fontdir]{FontAwesome.ttf}
 % Set font for header (default is Roboto)
-\setfontfamily\headerfont[
+\newfontfamily\headerfont[
   Path=\@fontdir,
   UprightFont=*-Regular.ttf,
   ItalicFont=*-Italic.ttf,
@@ -173,7 +173,7 @@
   BoldItalicFont=*-BoldItalic.ttf,
 ]{Roboto}
 
-\setfontfamily\headerfontlight[
+\newfontfamily\headerfontlight[
   Path=\@fontdir,
   UprightFont=*-Thin.ttf,
   ItalicFont=*-ThinItalic.ttf,
