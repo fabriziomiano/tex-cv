@@ -1,5 +1,5 @@
 compile_pdf:
-  image: harshjv/texlive-2015
+  image: registry.gitlab.com/islandoftex/images/texlive:latest
   script:
     - lualatex cv-en.tex
     - biber cv-en
