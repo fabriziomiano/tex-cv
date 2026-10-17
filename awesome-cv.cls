@@ -164,7 +164,7 @@
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
 % \newfontfamily\FA[Path=\@fontdir]{FontAwesome.ttf}
-\setfontfamily\FA[Path=\@fontdir]{FontAwesome}
+\renewfontfamily\FA[Path=\@fontdir]{FontAwesome.ttf}
 
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
@@ -576,6 +576,7 @@
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
   \vspace{-2.0mm}
+  \begin{minipage}{\textwidth}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -585,6 +586,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
+  \end{minipage}\par
 }
 
 % Define an environment for cvsubentry
@@ -649,7 +651,6 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -657,7 +658,6 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
 }
 
 % bib trial 
